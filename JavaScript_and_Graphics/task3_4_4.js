@@ -14,7 +14,7 @@ funciton start(){
 
     println("$" + dollars + "=" + pound + "British pounds");
 
-}
+
 
 
 /* This program helps us divide a large number
@@ -24,7 +24,7 @@ funciton start(){
  * how many groups there are, and how many
  * are left over. */
 
-function start(){
+
     var people = redInt("Number of people: ");
     var peoplePerGroup = redInt("People per group: ");
 

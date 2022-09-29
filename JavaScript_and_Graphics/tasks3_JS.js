@@ -39,7 +39,7 @@ function start(){
 	
     println("In the " + partOfDay + ",I wake up at " + time);
     
-    partOfDay = "afrernoon";
+    partOfDay = "afternoon";
     time = 12;
     
     println("In the " + partOfDay + ",I eat lunch at "+ time);
@@ -48,5 +48,25 @@ function start(){
     time = 11;
     
     println("In the " + ",I go to bad at " + time);
+
+    /* This program prompts the user for their name
+    * and age, and then prints it back out. */
+
+    var name = readLine("What is your name? ");
+    println("Hello " + name + ", nice to meet you!");
+
+    var age = readInt("What is your age? ");
+    println("You are " + " years old");
+    
+    /*
+    What is your name? Zach
+    What time should we meet for dinner? 5
+    Hi Zach, I will meet you at 5 o'clock.
+*/
+    var Name = readLine("What is your name? ");
+	var Time = readLine("What time should we meet for dinner?");
+	
+	println("Hi " + Name + ", I will meet you " + Time +"o'clock");
+
 
 }

@@ -75,4 +75,12 @@ function start(){
     println(sum);
 
 
+    //Let's write a program thit adds two numbers
+
+    var first = readInt("First number: ");
+    var second = readInt("Second number");
+    var sum = first + second;
+    println(sum);
+
+
 }

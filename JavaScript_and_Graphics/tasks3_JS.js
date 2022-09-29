@@ -32,4 +32,21 @@ function start(){
     numApples = 0;
     println( "Number of apples: " + numApples);
 
+
+    //3.2.4 Daily activities
+    var partOfDay = "morning";
+	var time = 8;
+	
+    println("In the " + partOfDay + ",I wake up at " + time);
+    
+    partOfDay = "afrernoon";
+    time = 12;
+    
+    println("In the " + partOfDay + ",I eat lunch at "+ time);
+    
+    partOfDay = " evening";
+    time = 11;
+    
+    println("In the " + ",I go to bad at " + time);
+
 }

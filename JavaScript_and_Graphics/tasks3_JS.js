@@ -13,4 +13,23 @@ function start(){
     println("My name is Rezo");
     println("I like to Basketball and reading");
 
+
+
+    // Basic Variables
+
+    var name = "Rezo";
+    println("My name is "+ name);
+
+    //Initializes numApples with value 5
+
+    var numApples = 5;
+
+    println("number of apples: " + numApples);
+
+    println(name + "ate " + numApples + "apples.");
+
+    //Eat all apples
+    numApples = 0;
+    println( "Number of apples: " + numApples);
+
 }

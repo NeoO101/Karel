@@ -69,4 +69,10 @@ function start(){
 	println("Hi " + Name + ", I will meet you " + Time +"o'clock");
 
 
+    var first = readInt("First number: ");
+    var second = readInt("Second number: ");
+    var sum = first + second;
+    println(sum);
+
+
 }

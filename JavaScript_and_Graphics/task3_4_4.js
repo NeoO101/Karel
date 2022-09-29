@@ -15,3 +15,21 @@ funciton start(){
     println("$" + dollars + "=" + pound + "British pounds");
 
 }
+
+
+/* This program helps us divide a large number
+ * of people into groups. We tell it how many
+ * total people there are, and how many people
+ * there are per group, and we figure out
+ * how many groups there are, and how many
+ * are left over. */
+
+function start(){
+    var people = redInt("Number of people: ");
+    var peoplePerGroup = redInt("People per group: ");
+
+    var groups = Math.floor(people / peoplePerGroup);
+    //var group = Math.floor(people / peoplePerGroup);
+    println("There are " + groups + " groups " + "with " + peopleLeft + " left over.");
+}
+

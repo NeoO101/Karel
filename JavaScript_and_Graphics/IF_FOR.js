@@ -53,4 +53,23 @@ function start(){
             println("No alterations.");
         }
     }
+
+
+    var NUM_CIRCLES = 19;
+
+    var CIRCLE_RADIUS = getWidth() / NUM_CIRCLES / 2;
+
+    var X_position = CIRCLE_RADIUS;
+
+    var Y_position = getHeight() / 3;
+
+    for( var i = 0; i < NUM_CIRCLES; i++){
+        var circle = new Circle(CIRCLE_RADIUS);
+        circle.setPosition(X_position, Y_position);
+        circle.setColor(Color.green);
+        add(circle);
+
+        X_position += 2*CIRCLE_RADIUS;
+    }
 }
+

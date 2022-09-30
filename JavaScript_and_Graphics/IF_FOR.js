@@ -71,5 +71,40 @@ function start(){
 
         X_position += 2*CIRCLE_RADIUS;
     }
+
+    var NUM_CIRCLES = 11;
+
+// This graphics program should draw a caterpillar. A caterpillar has NUM_CIRCLES
+// circles. Every other circle is a different color, the even circles are red, and
+// the odd circles are green. Use a for loop to draw the caterpillar, centered 
+// vertically in the screen.
+function start(){
+    
+    
+    var CIRCLE_RADIUS = getWidth() / NUM_CIRCLES / 2;
+    
+    var X_position = CIRCLE_RADIUS;
+    
+    var Y_position = getHeight() / 2;
+    
+ 
+    
+    
+     for ( var i = 0; i < NUM_CIRCLES; i++){
+        var circle = new Circle(CIRCLE_RADIUS);
+        circle.setPosition(X_position, Y_position);
+        if( i % 2 == 0){
+        circle.setColor(Color.green);
+        //add(circle);   
+        }else{
+            circle.setColor(Color.red);
+            //add(circle);
+        }
+        	add(circle);
+        
+        X_position += 2 * CIRCLE_RADIUS;
+    }
+
+}
 }
 

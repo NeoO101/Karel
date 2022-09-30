@@ -27,4 +27,30 @@ function start(){
         pritnln("passwords don't match.");
     }
 
+
+    //************ */
+    var age = readInt("What is your age?");
+    if(age <= 19 && age >=13){
+        println("Yes, you are a teenager.");
+    }else{
+        println("No, you are not a teenager.");
+    }
+
+
+    //********** */
+    function start(){
+        var lactoInto = "lactose intolerant";
+        var vege = "vegetarian";
+        var nothing = "none";
+        var food = readLine("Any dietary restrictions ?: ");
+        
+        if( food == lactoInto){
+            println("No cheese!");
+        }else if( food == vege){
+            println("Veggie burger."); 
+            }
+        else if(food == nothing){
+            println("No alterations.");
+        }
+    }
 }

@@ -75,4 +75,18 @@ function start() {
     heartCircle.setPosition(200, 250);
     add(heartCircle);
     
+
+    // This program introduces the !(not)
+    //operator, which lets you take the 
+    //opposite of a boolean value. Here
+    //we simulate a light switch
+
+    var ligth = true;
+    prinln("Light on ? " + ligth);
+    ligth = !ligth;
+    println("Light on ? " + ligth);
+
+    ligth = !ligth;
+    println("Light on ? " + ligth);
+    
 }

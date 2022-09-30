@@ -138,5 +138,13 @@ function start() {
     var age = readInt("What is your ager ?");
     var odlEnough = age >= 18;
     println("Can vote : " + oldEnough);
+
+
+
+    var grade = readInt("What was your grade?");
+
+    var gotB = grade >= 80 && grade < 90;
+
+    println("Got a B: " + gotB);
     
 }

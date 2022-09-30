@@ -111,6 +111,21 @@ function start() {
 
     pritnln("Can be president: " + canBePresident);
 
+    //this is boolean one more operator
 
+    var enoughCredits = readBoolean("Do you have enough course credits? ");
+	var requirements = readBoolean("Have you met all of your graduatin requirements? ");
+	var canGraduate = enoughCredits && requirements;
+	println("Can you gradute? " + canGraduate);
+
+
+    //Write your code here
+
+    var weekDay = readBoolean("Is today a weekday?");
+    var holiday = readBoolean("Is today a holiday?");
+
+    var isScool = !weekDay || holiday;
+
+    println("There is no scool today :" + isScool);
 
 }

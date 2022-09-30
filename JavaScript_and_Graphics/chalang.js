@@ -146,5 +146,28 @@ function start() {
     var gotB = grade >= 80 && grade < 90;
 
     println("Got a B: " + gotB);
+
+
+    /// operator my code
+
+
+    var firstNum = readInt("First die?");
+    var secondNum = readInt("Second die?");
     
+    var rolledDoubles = firstNum == secondNum;
+    println("Rolled doubles ?" + rolledDoubles);
+
+
+    var boxes = readInt("How many boxes did you sell?");
+	   
+	   
+	var badges = readInt("How many badges do you have?");
+	   
+	var time = readInt("How many hours have you volunteered?");
+	   
+	var status = boxes >=100 || (boxes >= 50 && badges >= 10 && time >=25);
+	   
+	println("Is gold status ?" + status);
+
+
 }

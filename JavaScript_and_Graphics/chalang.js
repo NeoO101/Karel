@@ -88,5 +88,29 @@ function start() {
 
     ligth = !ligth;
     println("Light on ? " + ligth);
-    
+
+
+    /*
+        Here we wrote a rogram to determine 
+        if someone meet the requirements to 
+        become President of the United States.
+
+        1. BE at least 35 yrars old
+
+        and 
+
+        2. Be a US Citizen
+
+
+    */
+    var areYouThirtyFive = readBoolean (" Are you at least thirty five years ?");
+
+    var isUSCitizen = readBoolean ("Are you a US Citizen? ");
+
+    var canBePresident = areYouThirtyFive && isUSCitizen;
+
+    pritnln("Can be president: " + canBePresident);
+
+
+
 }

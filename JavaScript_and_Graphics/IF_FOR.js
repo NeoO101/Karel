@@ -10,4 +10,21 @@ function start(){
     if(name == "Rezo"){
         println("Oh Great name.");
     }
+
+    var num = readInt("Number: ")
+    if(num % 2 ==0){
+        pritnln("Number is even");
+    }else{
+        println("Number is odd");
+    }
+
+    ///************** */
+    var secretPassword = "abc123";
+    var password = readLinke("Password: ");
+    if(password == secretPassword){
+        println("Passwords match.");
+    }else{
+        pritnln("passwords don't match.");
+    }
+
 }

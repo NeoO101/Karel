@@ -128,4 +128,15 @@ function start() {
 
     println("There is no scool today :" + isScool);
 
+
+
+
+    // We ise comparison operators to see
+    //if someone is old enough to vote in 
+    //the United states of america
+
+    var age = readInt("What is your ager ?");
+    var odlEnough = age >= 18;
+    println("Can vote : " + oldEnough);
+    
 }

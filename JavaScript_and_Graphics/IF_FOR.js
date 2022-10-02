@@ -120,5 +120,12 @@ function start(){
 println("The sum was " + sum);
 
 }
+
+    /*
+        5.8.3 Rolling a Die
+
+    */
+   var roll = Randomizer.nextInt(1,6);
+   println("You rolled a " + roll);
 }
 

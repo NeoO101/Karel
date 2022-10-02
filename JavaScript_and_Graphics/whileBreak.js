@@ -34,4 +34,19 @@ function start(){
         }
     
     }
+
+
+    var SECRET = "abc123";
+
+function start(){
+	while(true){
+	    var password = readLine("Enter password: ");
+	    if(password == SECRET){
+	        println("You go it!");
+	        break;
+	    }else{
+	        println("Sorry, that did not match. Please try again.");
+	    }
+	}
+}
 }

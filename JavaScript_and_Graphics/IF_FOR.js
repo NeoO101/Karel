@@ -105,6 +105,20 @@ function start(){
         X_position += 2 * CIRCLE_RADIUS;
     }
 
+
+    //This protrgarm adds the numbers from 1 to 100
+
+    var MIN = 1;
+    var MAX = 100;
+
+    var sum = 0;
+
+    for (var i = MIN; i <= MAX; i++){
+        sum += i;
+    }
+
+println("The sum was " + sum);
+
 }
 }
 

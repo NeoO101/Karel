@@ -31,5 +31,36 @@ function start() {
         }
 
     }
+
+
+    //one more random circles 
+
+    var NUM_CIRCLES = 30;
+var BIG_RADIUS = 180;
+
+function start() {
+	// Write your code here
+	
+	
+	var x = getWidth() / 2;
+	
+	
+	while(true){
+    	var color = Randomizer.nextColor();
+    	var y = getHeight() - BIG_RADIUS;
+
+    	
+    	var circle =  new Circle(BIG_RADIUS);
+    	circle.setPosition(x, y);
+    	circle.setColor(color);
+    	add(circle); 
+    	
+    	BIG_RADIUS = BIG_RADIUS - (BIG_RADIUS / NUM_CIRCLES);
+    	NUM_CIRCLES --;
+    	if(NUM_CIRCLES == 0 ){
+    	    break;
+    	}
+    }
+}
     
 }

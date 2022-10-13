@@ -18,4 +18,10 @@ function start(){
 function doubleNumber(x){
 	var doubledX = 2 * x;
 	return doubledX;
+
+    var x = square(5);
+	println(x);
 }
+function square(x){
+    var result = x * x;
+    return result;

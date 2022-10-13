@@ -17,6 +17,14 @@ doubleNubmer(y);
 	var number = 12;
 	
 	square(number);
+    triple(4);
+	
+	triple(12);
+	
+	
+	var testNumber = 153;
+	
+	triple(testNumber);
 
 }
 
@@ -33,4 +41,11 @@ function square(x){
     
     var squareNumber = x * x;
     println(squareNumber);
+}
+
+//tripled function
+
+function triple(x){
+    var tripleNumber = x * 3;
+    println(tripleNumber);
 }

@@ -28,6 +28,39 @@ doubleNubmer(y);
 
 }
 
+
+var LIGHT_RADIUS = 35;
+var STOPLIGHT_WIDTH = 120;
+var STOPLIGHT_HEIGHT = 350;
+var DIST_BETWEEN_LIGHTS = 100;
+var GRAY_COLOR = "#737071";
+
+function start(){
+    
+    drawRect(STOPLIGHT_WIDTH, STOPLIGHT_HEIGHT);
+    
+    drawCircle(LIGHT_RADIUS, Color.red, getWidth() / 2, (getHeight() / 2) - DIST_BETWEEN_LIGHTS);
+    
+    drawCircle(LIGHT_RADIUS, Color.yellow, getWidth() / 2, getHeight() / 2);
+    
+    drawCircle(LIGHT_RADIUS, Color.green, getWidth() / 2, (getHeight() / 2) + DIST_BETWEEN_LIGHTS);
+    	
+}
+
+function drawCircle(radius, color, x, y){
+    var circle = new Circle(radius);
+    circle.setPosition(x, y);
+    circle.setColor(color);
+    add(circle);
+}
+
+function drawRect(width, height){
+    var rect = new Rectangle(width, height);
+    rect.setPosition((getWidth() / 2) - (width / 2), (getHeight() / 2) - (height / 2));
+    rect.setColor(GRAY_COLOR);
+    add(rect);
+}
+
 //This function doubles a giv number
 //parameters
 

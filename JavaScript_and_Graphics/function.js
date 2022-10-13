@@ -161,3 +161,46 @@ function drawPoolBall(color, num, x, y){
 	text.setPosition(x, y);
 	add(text);
 	
+    var POLE_WIDTH = 5;
+    var LIGHT_RADIUS = 10;
+    var LIGHT_REQUIRED_HEIGHT = 200;
+    
+    function start(){
+        drawBuilding(50, 200, 50);
+        drawBuilding(100, 300, 125);
+        drawBuilding(50, 150, 200);
+        drawBuilding(100, 350, 275);
+    
+        // Add some more buildings!
+    }
+    
+    
+    function drawBuilding(width, height, xPosition){
+        var building = new Rectangle(width, height);
+        var door = new Rectangle(width / 2, height / 6);
+        
+        building.setPosition(xPosition -width / 2, getHeight() - height);
+        door.setPosition(xPosition -width / 4, getHeight() - height / 6)
+        
+        building.setColor(Color.black);
+        door.setColor(Color.white);
+        
+        add(building);
+        add(door);
+        
+        
+        if(height > LIGHT_REQUIRED_HEIGHT){
+            var pole =new Rectangle(POLE_WIDTH, height / 6 );
+            pole.setPosition(xPosition - POLE_WIDTH / 2, getHeight() - height - height / 6);
+            pole.setColor(Color.black);
+            add(pole);
+    
+            
+            var light = new Circle(LIGHT_RADIUS);
+            light.setPosition(xPosition, getHeight() - height - height / 6);
+            light.setColor(Color.green);
+            add(light);
+    
+        }
+        
+    }

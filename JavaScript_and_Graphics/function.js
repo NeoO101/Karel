@@ -80,5 +80,26 @@ function convertHeightToMeters(feet, inches){
     var result = (feetToCm + inchesToCm) * CM_TO_METERS;
     
     println(result);
+
+    verticalLine(100, 200);
+    verticalLine(200, 100);
+    verticalLine(300, 20);
+
+    
+}
+
+//Function creates a circle ad adds it to the cavaas
+//Prameters: radius, color, X and y of cirlce's center
+function drawCircle(radius, color, x, y){
+    var circle = new Circle(radius);
+    circle.setColor(color);
+    circle.setPosition(x, y);
+    add(circle);
+
+}
+function verticalLine(first, second){
+    var line = new Line(first, 0, first, second);
+    line.setColor(Color.black);
+    add(line);
     
 }

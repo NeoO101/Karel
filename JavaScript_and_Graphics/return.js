@@ -25,3 +25,4 @@ function doubleNumber(x){
 function square(x){
     var result = x * x;
     return result;
+}

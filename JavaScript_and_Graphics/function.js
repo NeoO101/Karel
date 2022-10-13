@@ -59,3 +59,26 @@ function printTriangleArea(base, height){
     var area = 1 / 2 * base * height;
     println(area);
 }
+
+var INCHES_TO_CM = 2.54;
+var CM_TO_METERS = 0.01;
+var FEET_TO_INCHES = 12;
+
+function start(){
+    convertHeightToMeters(6, 4);
+    convertHeightToMeters(5, 8);
+    convertHeightToMeters(5, 2);
+	
+}
+
+function convertHeightToMeters(feet, inches){
+    var feetToInches = FEET_TO_INCHES * feet;
+    
+    var feetToCm = INCHES_TO_CM * feetToInches; 
+    var inchesToCm = INCHES_TO_CM * inches;
+    
+    var result = (feetToCm + inchesToCm) * CM_TO_METERS;
+    
+    println(result);
+    
+}

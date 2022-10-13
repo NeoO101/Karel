@@ -49,3 +49,8 @@ function triple(x){
     var tripleNumber = x * 3;
     println(tripleNumber);
 }
+
+function sum(first, second){
+    var total = first + second;
+    println(total);
+}

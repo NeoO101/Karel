@@ -54,3 +54,8 @@ function sum(first, second){
     var total = first + second;
     println(total);
 }
+
+function printTriangleArea(base, height){
+    var area = 1 / 2 * base * height;
+    println(area);
+}

@@ -55,3 +55,50 @@ function calculateArea(width, length){
     var result = width * length;
     return result;
 }
+
+function start(){
+	var result = sum(5, 8);
+	println(result);
+	
+	var x = sum(10, 20);
+	println(x);
+	
+	var y = addOne(100);
+	println(y);
+	
+	var z = addOne(y);
+	println(z);
+}
+
+
+function sum(first, second){
+	var total = first + second;
+	return total;
+}
+
+function addOne(x){
+	return x + 1;
+}
+var SENTINEL = 0;
+
+// Prints whether the entered number is even or odd
+function start(){
+    while(true){
+        var number = readInt("Enter a number (0 to exit): ");
+        if(number == SENTINEL){
+            println("Done!");
+            break;
+        }else if(isEven(number)){
+            println("Even");
+        }else{
+            println("Odd");
+        }
+
+    }
+    
+	
+}
+
+function isEven(x){
+  return ( x % 2 == 0);
+}

@@ -102,3 +102,29 @@ function start(){
 function isEven(x){
   return ( x % 2 == 0);
 }
+
+
+function start(){
+	var x = addOne(8);
+
+	println(x);
+
+	var y = addOne(10);
+	println(y);
+
+	var a = sum(10, 20);
+
+
+}
+
+
+function addOne(x){
+	var result = x + 1;
+	return result;
+}
+function sum(x, y){
+	var resutl = x + y;
+	return result;
+
+}
+

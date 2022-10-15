@@ -53,5 +53,14 @@ function start() {
 	function difference(x, y){
 		return x - y;
 	}
+
+	function start(){
+		println(doubleNumber(doubleNumber(10)));
+	}
+	
+	function doubleNumber(x){
+		var doubledX = 2 * x;
+		return doubledX;
+	}
 	
 }

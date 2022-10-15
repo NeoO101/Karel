@@ -62,5 +62,17 @@ function start() {
 		var doubledX = 2 * x;
 		return doubledX;
 	}
+
+	function start() {
+		println(mystery(3, "*~*"));
+	}
+	
+	function mystery(num, pattern) {
+		var result = "";
+		for (var i = 0; i < num; i++) {
+			result = result + pattern;
+		}
+		return result;
+	}
 	
 }

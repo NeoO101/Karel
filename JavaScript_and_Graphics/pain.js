@@ -36,6 +36,22 @@ function start() {
 	    }
 	    
 	    
+	}function start(){
+		var x = 2;
+		var y = 5;
+		var value1 = product(x, y);
+		var value2 = difference(y, x);
+	
+		var result = difference(value1, value2);
+		println(result);
+	}
+	
+	function product(x, y){
+		return x * y;
+	}
+	
+	function difference(x, y){
+		return x - y;
 	}
 	
 }

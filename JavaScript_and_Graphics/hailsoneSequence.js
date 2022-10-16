@@ -12,7 +12,7 @@ function start(){
     	
     	count++;
 	}
-	println("It took " + count + " steps to complete.")
+	println("It took " + count + " steps to complete.");
 }
 
 

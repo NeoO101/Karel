@@ -1,11 +1,13 @@
 
 var RADIUS = 100;
-var ball = new Circle(RADIUS);
-updateBall(); // set random initial position and color
-add(ball); // add the ball to the screen once
+
 
 function start() {
+    var ball = new Circle(RADIUS);
+    updateBall(); // set random initial position and color
+    add(ball); // add the ball to the screen once   
     setTimer(updateBall, 100); // update ball every 100ms
+    
 }
 
 function updateBall() {

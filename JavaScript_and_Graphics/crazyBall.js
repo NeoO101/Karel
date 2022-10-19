@@ -17,7 +17,8 @@ function updateBall() {
 
 
 
-/*var RADIUS = 100;
+/*
+var RADIUS = 100;
 
 var circle ;
 
@@ -49,3 +50,33 @@ function drawCircle(){
 }
 
 */
+
+// Constants
+var CIRCLES_PER_SPLATTER = 20;
+var MIN_RADIUS = 5;
+var MAX_RADIUS = 25;
+var DELAY = 500;
+
+/* This program creates a paint splatter.
+* It's art. */
+function start(){
+   setTimer(updateCircle, DELAY);
+}
+
+
+function updateCircle(){
+   drawCircle(Randomizer.nextInt(MIN_RADIUS, MAX_RADIUS),
+               Randomizer.nextColor(),
+               Randomizer.nextInt(0, getWidth()),
+               Randomizer.nextInt(0, getHeight()));
+               
+ 
+
+}
+
+function drawCircle(radius, color, x, y){
+   var circle = new Circle(radius);
+   circle.setPosition(x,y);
+   circle.setColor(color);
+   add(circle);
+}

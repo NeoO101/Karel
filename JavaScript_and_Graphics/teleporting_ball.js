@@ -14,10 +14,8 @@ function start(){
 }
 
 function teleport(e){
-    ball = new Circle(20);
-	ball.setPosition(e.getX(), e.getY());
+    ball.setPosition(e.getX(), e.getY());
 	ball.setColor(Randomizer.nextColor());
-	add(ball);
 }
 
 // Check if the ball has reached a wall.

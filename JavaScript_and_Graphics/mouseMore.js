@@ -21,3 +21,22 @@ function paint(e){
     add(circle);
     
 }
+
+var coords;
+
+function start(){
+
+    mouseMoveMethod(checkCoords);
+
+
+}
+function checkCoords(e){
+    remove(coords);
+    coords = new Text( "(" + e.getX() + "," + e.getY() + ")");
+    coords.setPosition(100, 100);
+    add(coords);
+}
+
+
+
+
